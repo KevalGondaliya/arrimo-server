@@ -13,6 +13,6 @@ so when you setup project first time in your system and run the above command, i
 email: admin@gmail.com
 password: 123456
 
-After this you can change you email as a admin and also you can create a user.
+After this you can change your email as a admin and also you can create a user.
 
 and user can create a event.
