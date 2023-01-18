@@ -1,4 +1,4 @@
-# Getting Started with nodejs App
+# How to run Nodejs app
 
 need to run cmd:
 
