@@ -55,12 +55,6 @@ module.exports = {
           }
         );
       });
-      console.log(
-        "passwordMatch",
-        passwordMatch,
-        body.password,
-        existingUser.password
-      );
       if (passwordMatch) {
         let u = {
           sub: existingUser.firstName,
@@ -94,7 +88,7 @@ module.exports = {
   getUsers: async (req, res) => {
     try {
       await users
-        .findAll({ where: { isDelete: false } })
+        .findAll()
         .then((data) => res.status(200).json({ status: 200, data: data }));
     } catch (err) {
       res.status(500).json(err.message);
