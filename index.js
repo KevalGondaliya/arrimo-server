@@ -9,6 +9,10 @@ require("./models");
 app.use(express.json({ limit: "50mb" }));
 app.use(express.urlencoded({ extended: true }));
 
+app.get("/", (req, res) => {
+  res.send("Hey this is my API running 🥳");
+});
+
 app.use("/users", require("./routes/users.js"));
 app.use("/events", require("./routes/events.js"));
 
