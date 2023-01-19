@@ -88,7 +88,7 @@ module.exports = {
   getUsers: async (req, res) => {
     try {
       await users
-        .findAll()
+        .findAll({ where: { role: "user" } })
         .then((data) => res.status(200).json({ status: 200, data: data }));
     } catch (err) {
       res.status(500).json(err.message);

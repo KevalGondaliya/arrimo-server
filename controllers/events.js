@@ -9,6 +9,7 @@ module.exports = {
           res.status(200).json({ status: 200, message: "Event created..." })
         );
     } catch (err) {
+      console.log("err", err);
       res.status(500).json(err.message);
     }
   },

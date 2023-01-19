@@ -30,7 +30,6 @@ module.exports = (sequelize, DataType) => {
     },
     end: {
       type: DataType.STRING,
-      unique: true,
       allowNull: false,
       validate: {
         isTypeMAtch(value) {
